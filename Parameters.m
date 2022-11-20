@@ -4,9 +4,9 @@ rng(0,'twister');
 consumers = 1405;
 consumer_no = 45;
 lambda_0 = 21;
-p = 43.63;
+p = 0.04363;
 n = 0.4;
-q = 1287;
+q = 1.287;
 mean_d = 7;
 var_d = 3.5*3.5;
 mean_e = -0.8;
@@ -28,11 +28,11 @@ a = 2*n/(G_s - G_w);
 
 s_0 = q;
 w_0 = D*(1-E)*lambda_0^E;
-b_k = 0.289;
+b_k = 0.289*1405;
 B = s_0 - w_0 - b_k;
 %%--------------------------------Plots----------------------------------%%
 figure(1)
-plot(dd);
+plot(d);
 xlabel('consumer');
 hold on;
 plot(e);
